@@ -5,12 +5,10 @@
   -->
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
   <groupId>com.mytiki</groupId>
   <artifactId>utils-lambda-java</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <packaging>jar</packaging>
-
   <name>Lambda Utilities</name>
   <description>A collection of Java utilities for AWS Lambda functions</description>
   <url>https://github.com/tiki-bar/utils-lambda-java</url>
@@ -32,13 +30,11 @@
       <organization>Tiki inc.</organization>
     </developer>
   </developers>
-
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>21</maven.compiler.source>
     <maven.compiler.target>21</maven.compiler.target>
   </properties>
-
   <dependencies>
     <dependency>
       <groupId>com.amazonaws</groupId>
@@ -104,7 +100,6 @@
       <version>2.17.1</version>
     </dependency>
   </dependencies>
-
   <distributionManagement>
     <snapshotRepository>
       <id>ossrh</id>
@@ -115,7 +110,6 @@
       <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
     </repository>
   </distributionManagement>
-
   <build>
     <plugins>
       <plugin>
