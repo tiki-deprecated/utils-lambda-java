@@ -1,0 +1,39 @@
+# Reference: https://github.com/repository-settings/app
+
+_extends: .github
+
+repository:
+  name: utils-lambda-java
+  description: Utilities library and reference examples for Java-based lambda functions
+  homepage: https://mytiki.com/
+  topics: java, lambda
+  private: false
+  has_issues: true
+  has_projects: true
+  has_discussions: false
+
+teams:
+  - name: sysadmin
+    permission: admin
+  - name: engineering
+    permission: push
+  - name: product
+    permission: triage
+  - name: backend
+    permission: push
+
+environments:
+  - name: production
+
+branches:
+  - name: main
+    protection:
+      required_status_checks:
+        strict: true
+        contexts: []
+
+milestones:
+  - title: 0.0.1
+    description: |
+      Pull in existing reference code and publish to Maven Central
+    state: open
