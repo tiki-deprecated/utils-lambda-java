@@ -24,7 +24,7 @@ jobs:
       matrix:
         include:
           - language: java-kotlin
-            build-mode: manual
+            build-mode: autobuild
 
     steps:
       - name: Checkout repository
@@ -42,9 +42,9 @@ jobs:
           languages: ${{ matrix.language }}
           build-mode: ${{ matrix.build-mode }}
 
-      - if: matrix.build-mode == 'manual'
-        name: CodeQL Auto-build
-        uses: github/codeql-action/autobuild@v2
+#      - if: matrix.build-mode == 'manual'
+#        name: CodeQL Auto-build
+#        uses: github/codeql-action/autobuild@v2
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v3
