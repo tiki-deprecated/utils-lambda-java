@@ -4,6 +4,12 @@ on:
     workflows: ['Tests']
     types:
       - completed
+
+permissions:
+  contents: read
+  actions: read
+  checks: write
+
 jobs:
   junit:
     runs-on: ubuntu-latest

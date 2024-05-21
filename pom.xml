@@ -5,12 +5,10 @@
   -->
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
   <groupId>com.mytiki</groupId>
   <artifactId>utils-lambda-java</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <packaging>jar</packaging>
-
   <name>Lambda Utilities</name>
   <description>A collection of Java utilities for AWS Lambda functions</description>
   <url>https://github.com/tiki-bar/utils-lambda-java</url>
@@ -32,13 +30,11 @@
       <organization>Tiki inc.</organization>
     </developer>
   </developers>
-  
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>21</maven.compiler.source>
     <maven.compiler.target>21</maven.compiler.target>
   </properties>
-
   <dependencies>
     <dependency>
       <groupId>com.amazonaws</groupId>
@@ -48,7 +44,7 @@
     <dependency>
       <groupId>com.amazonaws</groupId>
       <artifactId>aws-lambda-java-events</artifactId>
-      <version>3.11.4</version>
+      <version>3.11.5</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
@@ -58,12 +54,12 @@
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-api</artifactId>
-      <version>2.22.0</version>
+      <version>2.23.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-core</artifactId>
-      <version>2.22.0</version>
+      <version>2.23.1</version>
     </dependency>
     <dependency>
       <groupId>com.amazonaws</groupId>
@@ -73,23 +69,23 @@
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-simple</artifactId>
-      <version>2.0.9</version>
+      <version>2.0.13</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
-      <version>2.0.9</version>
+      <version>2.0.13</version>
     </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-engine</artifactId>
-      <version>5.10.1</version>
+      <version>5.10.2</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.mockito</groupId>
       <artifactId>mockito-core</artifactId>
-      <version>5.8.0</version>
+      <version>5.12.0</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -104,7 +100,6 @@
       <version>2.17.1</version>
     </dependency>
   </dependencies>
-
   <distributionManagement>
     <snapshotRepository>
       <id>ossrh</id>
@@ -115,17 +110,16 @@
       <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
     </repository>
   </distributionManagement>
-
   <build>
     <plugins>
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.2.2</version>
+        <version>3.2.5</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
-        <version>3.5.1</version>
+        <version>3.5.3</version>
         <configuration>
           <createDependencyReducedPom>false</createDependencyReducedPom>
           <filters>
@@ -162,7 +156,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-source-plugin</artifactId>
-        <version>3.2.1</version>
+        <version>3.3.1</version>
         <executions>
           <execution>
             <id>attach-sources</id>
@@ -175,7 +169,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.4.1</version>
+        <version>3.6.3</version>
         <executions>
           <execution>
             <id>attach-javadocs</id>
@@ -199,7 +193,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-gpg-plugin</artifactId>
-        <version>3.0.1</version>
+        <version>3.2.4</version>
         <executions>
           <execution>
             <id>sign-artifacts</id>
