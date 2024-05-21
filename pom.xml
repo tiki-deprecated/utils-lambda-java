@@ -13,7 +13,26 @@
 
   <name>Lambda Utilities</name>
   <description>A collection of Java utilities for AWS Lambda functions</description>
-
+  <url>https://github.com/tiki-bar/utils-lambda-java</url>
+  <licenses>
+    <license>
+      <name>AGPL-3.0-only</name>
+      <url>https://github.com/tiki-bar/utils-lambda-java/blob/main/LICENSE</url>
+    </license>
+  </licenses>
+  <scm>
+    <connection>scm:git:git@github.com:tiki-bar/utils-lambda-java.git</connection>
+    <url>https://github.com/tiki-bar/utils-lambda-java</url>
+  </scm>
+  <developers>
+    <developer>
+      <name>mytiki</name>
+      <email>hello@mytiki.com</email>
+      <url>https://mytiki.com</url>
+      <organization>Tiki inc.</organization>
+    </developer>
+  </developers>
+  
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>21</maven.compiler.source>
