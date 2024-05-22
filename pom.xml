@@ -7,7 +7,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.mytiki</groupId>
   <artifactId>utils-lambda-java</artifactId>
-  <version>1.0.2</version>
+  <version>1.0.3</version>
   <packaging>jar</packaging>
   <name>Lambda Utilities</name>
   <description>A collection of Java utilities for AWS Lambda functions</description>
