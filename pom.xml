@@ -118,43 +118,6 @@
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-shade-plugin</artifactId>
-        <version>3.5.3</version>
-        <configuration>
-          <createDependencyReducedPom>false</createDependencyReducedPom>
-          <filters>
-            <filter>
-              <artifact>*:*</artifact>
-              <excludes>
-                <exclude>module-info.class</exclude>
-                <exclude>META-INF/*</exclude>
-                <exclude>META-INF/versions/**</exclude>
-                <exclude>META-INF/services/**</exclude>
-              </excludes>
-            </filter>
-          </filters>
-          <transformers>
-            <transformer implementation="org.apache.logging.log4j.maven.plugins.shade.transformer.Log4j2PluginCacheFileTransformer"/>
-          </transformers>
-        </configuration>
-        <executions>
-          <execution>
-            <phase>package</phase>
-            <goals>
-              <goal>shade</goal>
-            </goals>
-          </execution>
-        </executions>
-        <dependencies>
-          <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-transform-maven-shade-plugin-extensions</artifactId>
-            <version>0.1.0</version>
-          </dependency>
-        </dependencies>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-source-plugin</artifactId>
         <version>3.3.1</version>
         <executions>
