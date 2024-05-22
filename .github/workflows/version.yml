@@ -43,10 +43,10 @@ jobs:
       - name: Commit Changes
         continue-on-error: true
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.BOT_PAT }}
         run: |
-          git config --global user.email "action@github.com"
-          git config --global user.name "GH Action"
+          git config --global user.email "admin@mytiki.com"
+          git config --global user.name "mytiki bot"
           git add pom.xml
           git commit -m 'version bump'
           git push
