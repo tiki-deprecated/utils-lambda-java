@@ -3,8 +3,6 @@
  * MIT license. See LICENSE file in root directory.
  */
 
-package com.mytiki.core.iceberg.utils;
-
 import org.apache.iceberg.aws.glue.GlueCatalog;
 import org.apache.iceberg.catalog.Namespace;
 import org.apache.logging.log4j.LogManager;
